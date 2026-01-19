@@ -9,7 +9,6 @@ export class CartPage {
     this.addToCartButton = page.locator('button[name="add-to-cart"]');
   }
 
- 
   async openProductPage() {
    
     await this.page.goto(process.env.BASE_PRODUCT_URL!, {
@@ -57,7 +56,6 @@ export class CartPage {
     const emptyMessage = this.page.locator('.cart-empty');
   
   }
-
 
   async verifyCartIsEmpty() {
     const emptyMessage = this.page.locator('.cart-empty');
